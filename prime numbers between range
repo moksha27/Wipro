@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Demo{
+    public static void main(String args[])
+    {
+        Scanner c=new Scanner(System.in);
+        int a,b;
+        System.out.println("enter 1st range:");
+        a=c.nextInt();
+        System.out.println("enter 2nd range:");
+        b=c.nextInt();
+        System.out.println("the prime numbers are:");
+        for(int i=a;i<b;i++)
+        {
+            if (isPrime(i))
+            {
+                System.out.println(i+" ");
+            }
+        }
+    }
+public static boolean isPrime(int n)
+{
+    if(n<=1)
+    {
+        return false;
+    }
+    for(int i=2;i<=Math.sqrt(n);i++)
+    {
+       if(n%i==0)
+       {
+        return false;
+       }
+    }
+    return true;
+}
+}
