@@ -1,0 +1,18 @@
+import java.util.*;
+class palin
+{
+    public static void main(String args[])
+    {
+        Scanner c=new Scanner(System.in);
+        System.out.println("enter a character");
+        char ch=c.next().charAt(0);
+        if(Character.isUpperCase(ch))
+        {
+            System.out.println(Character.toLowerCase(ch));
+        }
+        else
+        {
+            System.out.println(Character.toUpperCase(ch));
+        }
+    }
+}
